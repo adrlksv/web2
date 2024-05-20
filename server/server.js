@@ -44,10 +44,10 @@ function initial() {
 }
 
 require("./routes/auth.routes")(app);
+require("./routes/chats.routes")(app);
 require("./routes/authCheck.routes")(app);
 
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
